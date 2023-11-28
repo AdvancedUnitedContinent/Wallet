@@ -15,4 +15,22 @@ export class WalletController {
         const memberNo: number = req.user.memberNo;
         return await this.walletService.createAllWallet(memberNo);
     }
+
+    @ApiOperation({summary: '지갑 목록 조회'})
+    @Get('')
+    async getWalletList(@Req() req): Promise<CustomHttpResponse> {
+        const memberNo: number = req.user.memberNo;
+        return await this.walletService.getWalletList(memberNo);
+    }
+
+    @ApiOperation({summary: '지갑 상세 조회'})
+    @ApiQuery({name: 'coinSymbol', description: '코인 심볼'})
+    @Get('/info')
+    async getWalletDetail(
+        @Req() req,
+        @Query('coinSymbol') coinSymbol: string,
+    ): Promise<CustomHttpResponse> {
+        const memberNo: number = req.user.memberNo;
+        return await this.walletService.getWalletDetail(memberNo, coinSymbol);
+    }
 }
