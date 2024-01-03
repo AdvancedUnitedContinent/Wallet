@@ -20,4 +20,9 @@ export class CryptoController {
         return await this.cryptoService.getSwapPrice(fromSymbol, toSymbol);
     }
 
+    @ApiOperation({summary: '코인 시세 조회'})
+    @Get('exchangePrice')
+    async getCryptoExchangePrice(): Promise<CustomHttpResponse> {
+        return await this.cryptoService.getExchangePrice();
+    }
 }
