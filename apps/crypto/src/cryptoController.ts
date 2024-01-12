@@ -25,4 +25,15 @@ export class CryptoController {
     async getCryptoExchangePrice(): Promise<CustomHttpResponse> {
         return await this.cryptoService.getExchangePrice();
     }
+
+    @ApiOperation({ summary: '송금 유효성 검사' })
+    @ApiBody({ type: SendValidationReq })
+    @Post('send/validation')
+    async validateSend(
+        @Req() req,
+        @Body() sendValidationReq: SendValidationReq,
+    ): Promise<CustomHttpResponse> {
+        const memberNo: number = req.user.memberNo;
+        return await this.cryptoService.validateSend(memberNo, sendValidationReq);
+    }
 }
