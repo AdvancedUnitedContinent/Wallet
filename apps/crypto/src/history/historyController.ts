@@ -23,4 +23,15 @@ export class HistoryController {
         const memberNo: number = req.user.memberNo;
         return await this.historyService.getTransaction(memberNo, coinSymbol, txType, startDate, endDate, pageNo, pageSize, sortType);
     }
+
+    @ApiOperation({summary: '거래 상세 조회'})
+    @ApiQuery({name: 'txNo', description: '거래 번호'})
+    @Get('/info')
+    async getTransactionDetail(
+        @Req() req,
+        @Query('txNo') txNo: number
+    ): Promise<CustomHttpResponse> {
+        const memberNo: number = req.user.memberNo;
+        return await this.historyService.getTransactionDetail(memberNo, txNo);
+    }
 }
