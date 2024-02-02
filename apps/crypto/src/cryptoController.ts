@@ -36,4 +36,15 @@ export class CryptoController {
         const memberNo: number = req.user.memberNo;
         return await this.cryptoService.validateSend(memberNo, sendValidationReq);
     }
+
+    @ApiOperation({ summary: '출금 주소록 등록' })
+    @Post('withdrawal/addressbook')
+    async addWalletAddressBook(
+        @Req() req,
+        @Body() addWalletAddressBookReq: AddWalletAddressBookReq,
+    ): Promise<CustomHttpResponse> {
+        addWalletAddressBookReq.memberNo = req.user.memberNo;
+        return await this.cryptoService.addWalletAddressBook(addWalletAddressBookReq);
+    }
+
 }
