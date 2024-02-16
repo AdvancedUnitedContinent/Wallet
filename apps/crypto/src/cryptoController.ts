@@ -47,4 +47,16 @@ export class CryptoController {
         return await this.cryptoService.addWalletAddressBook(addWalletAddressBookReq);
     }
 
+    @ApiOperation({summary: '약관 조회'})
+    @Get('terms')
+    async getTerms(): Promise<CustomHttpResponse> {
+        return await this.cryptoService.getTerms();
+    }
+
+    @ApiOperation({summary: '약관 동의'})
+    @Put('terms/agreement')
+    async updateWalletAgreement(@Req() req): Promise<CustomHttpResponse> {
+        return await this.cryptoService.updateWalletAgreement(req.user.memberNo);
+    }
+
 }
