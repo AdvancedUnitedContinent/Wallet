@@ -37,6 +37,16 @@ export class CryptoController {
         return await this.cryptoService.validateSend(memberNo, sendValidationReq);
     }
 
+    @ApiOperation({summary: '출금 지갑 유효성 검사'})
+    @ApiQuery({name: 'address', description: '출금 주소'})
+    @Get('withdrawal/address')
+    async checkWalletAddress(
+        @Query('address') address: string,
+        @Query('tokenType') tokenType: string,
+    ): Promise<CustomHttpResponse> {
+        return await this.cryptoService.checkWalletAddress(address, tokenType);
+    }
+
     @ApiOperation({ summary: '출금 주소록 등록' })
     @Post('withdrawal/addressbook')
     async addWalletAddressBook(
