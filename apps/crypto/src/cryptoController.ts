@@ -74,6 +74,7 @@ export class CryptoController {
         );
     }
 
+<<<<<<< HEAD
     @ApiOperation({ summary: '출금 주소록 수정' })
     @Put('withdrawal/addressbook')
     async updateWalletAddressBook(
@@ -100,6 +101,8 @@ export class CryptoController {
         );
     }
 
+=======
+>>>>>>> 73ffb19 (Add Crypto API: Withdrawal wallet address register)
     @ApiOperation({summary: '약관 조회'})
     @Get('terms')
     async getTerms(): Promise<CustomHttpResponse> {

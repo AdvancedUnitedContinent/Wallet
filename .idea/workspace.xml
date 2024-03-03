@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7cabd213-4303-45b1-86a3-45135d0764cc" name="Changes" comment="Modify Crypto API: Agreement">
+      <change afterPath="$PROJECT_DIR$/ --graph" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Wallet.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/er.email hrs0518@ennovalabs.com" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "history": [
+    {
+      "state": "OPEN"
+    }
+  ],
+  "lastFilter": {
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="1bd50ef1-1edc-409b-9213-82c306a9cc2d" />
+        <option name="url" value="https://github.com/AdvancedUnitedContinent/Wallet.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2cRVJ6lhrLBDngTRVGkTYqWavFs" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "dev",
+    "last_opened_file_path": "C:/Users/hojncode/Documents/git/잔디용/Wallet",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.2.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7cabd213-4303-45b1-86a3-45135d0764cc" name="Changes" comment="" />
+      <created>1708074302786</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1708074302786</updated>
+      <workItem from="1708074303834" duration="1795000" />
+      <workItem from="1708870027872" duration="174000" />
+      <workItem from="1709474051223" duration="287000" />
+      <workItem from="1710076918647" duration="110000" />
+      <workItem from="1710681778794" duration="251000" />
+      <workItem from="1711279072709" duration="405000" />
+      <workItem from="1711891184605" duration="155000" />
+      <workItem from="1712795624501" duration="599000" />
+      <workItem from="1712827373010" duration="8000" />
+      <workItem from="1713111126545" duration="702000" />
+      <workItem from="1713499618414" duration="1420000" />
+      <workItem from="1715005396249" duration="1423000" />
+      <workItem from="1715042551626" duration="11000" />
+      <workItem from="1715560763282" duration="232000" />
+    </task>
+    <task id="LOCAL-00001" summary="Add Crypto API: create Terms and conditions Agreement">
+      <option name="closed" value="true" />
+      <created>1708074625618</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708074625619</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add Crypto API: Withdrawal wallet address validation">
+      <option name="closed" value="true" />
+      <created>1708870192589</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708870192589</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add Crypto API: Withdrawal wallet address register">
+      <option name="closed" value="true" />
+      <created>1709474202217</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709474202217</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add Crypto API: Edit Withdrawal wallet address">
+      <option name="closed" value="true" />
+      <created>1710077012635</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710077012635</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add Crypto API: Delete Withdrawal wallet address">
+      <option name="closed" value="true" />
+      <created>1710681839091</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1710681839091</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add Wallet API: Update Wallet expose status">
+      <option name="closed" value="true" />
+      <created>1711279221134</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711279221134</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add History API: Get User AlarmList">
+      <option name="closed" value="true" />
+      <created>1711891335704</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1711891335704</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add History API: Get User Wallet By Crypto Type">
+      <option name="closed" value="true" />
+      <created>1713111223113</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1713111223113</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add Crypto API: Create Crypto">
+      <option name="closed" value="true" />
+      <created>1713500086201</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1713500086202</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add Crypto API: Delete Crypto">
+      <option name="closed" value="true" />
+      <created>1715005454834</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1715005454834</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add Crypto API: Rollback Crypto">
+      <option name="closed" value="true" />
+      <created>1715005900613</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1715005900613</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Modify Crypto API: Agreement">
+      <option name="closed" value="true" />
+      <created>1715560831999</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1715560831999</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Add Crypto API: create Terms and conditions Agreement" />
+    <MESSAGE value="Add Crypto API: Withdrawal wallet address validation" />
+    <MESSAGE value="Add Crypto API: Withdrawal wallet address register" />
+    <MESSAGE value="Add Crypto API: Edit Withdrawal wallet address" />
+    <MESSAGE value="Add Crypto API: Delete Withdrawal wallet address" />
+    <MESSAGE value="Add Wallet API: Update Wallet expose status" />
+    <MESSAGE value="Add History API: Get User AlarmList" />
+    <MESSAGE value="Add History API: Get User Wallet By Crypto Type" />
+    <MESSAGE value="Add Crypto API: Create Crypto" />
+    <MESSAGE value="Add Crypto API: Delete Crypto" />
+    <MESSAGE value="Add Crypto API: Rollback Crypto" />
+    <MESSAGE value="Modify Crypto API: Agreement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modify Crypto API: Agreement" />
+  </component>
+</project>
