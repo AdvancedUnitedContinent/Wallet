@@ -86,6 +86,20 @@ export class CryptoController {
         );
     }
 
+    @ApiOperation({ summary: '출금 주소록 삭제' })
+    @ApiQuery({ name: 'addressNo', description: '주소록 번호' })
+    @Delete('withdrawal/addressbook')
+    async deleteWalletAddressBook(
+        @Req() req,
+        @Query('addressNo') addressNo: number,
+    ): Promise<CustomHttpResponse> {
+        const memberNo: number = req.user.memberNo;
+        return await this.cryptoService.deleteWalletAddressBook(
+            addressNo,
+            memberNo,
+        );
+    }
+
     @ApiOperation({summary: '약관 조회'})
     @Get('terms')
     async getTerms(): Promise<CustomHttpResponse> {
