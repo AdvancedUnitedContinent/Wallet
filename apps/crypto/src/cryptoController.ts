@@ -112,6 +112,8 @@ export class CryptoController {
         );
     }
     
+
+
     @ApiOperation({summary: '약관 조회'})
     @Get('terms')
     async getTerms(): Promise<CustomHttpResponse> {
