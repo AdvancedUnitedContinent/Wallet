@@ -16,6 +16,14 @@ export class WalletController {
         return await this.walletService.createAllWallet(memberNo);
     }
 
+    @ApiOperation({summary: '지갑 노출 여부 수정'})
+    @ApiBody({type: WalletExposeUpdateReq})
+    @Put('/expose')
+    async updateWallet(@Req() req, @Body() walletExposeUpdateReq: WalletExposeUpdateReq): Promise<CustomHttpResponse> {
+        walletExposeUpdateReq.memberNo = req.user.memberNo;
+        return await this.walletService.updateWalletExpose(walletExposeUpdateReq);
+    }
+
     @ApiOperation({summary: '지갑 목록 조회'})
     @Get('')
     async getWalletList(@Req() req): Promise<CustomHttpResponse> {
