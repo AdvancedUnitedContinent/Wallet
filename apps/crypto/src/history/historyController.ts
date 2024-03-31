@@ -34,4 +34,19 @@ export class HistoryController {
         const memberNo: number = req.user.memberNo;
         return await this.historyService.getTransactionDetail(memberNo, txNo);
     }
+
+    @ApiOperation({ summary: '알림 내역 조회' })
+    @ApiQuery({ name: 'pageNo', description: '페이지 번호', required: false })
+    @ApiQuery({ name: 'pageSize', description: '페이지 크기', required: false })
+    @ApiQuery({ name: 'sortType', description: '정렬 순서', required: false })
+    @Get('/alram/list')
+    async getUserAlarmList(
+        @Req() req,
+        @Query('pageNo') pageNo?: number,
+        @Query('pageSize') pageSize?: number,
+        @Query('sortType') sortType?: string,
+    ): Promise<CustomHttpResponse> {
+        const memberNo: number = req.user.memberNo;
+        return await this.historyService.getUserAlarmList(memberNo, pageNo, pageSize, sortType);
+    }
 }
