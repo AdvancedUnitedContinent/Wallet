@@ -41,4 +41,14 @@ export class WalletController {
         const memberNo: number = req.user.memberNo;
         return await this.walletService.getWalletDetail(memberNo, coinSymbol);
     }
+
+    //TODO: Need to relocate to the BackOffice
+    @ApiOperation({summary: '회원 지갑 목록 조회'})
+    @ApiQuery({name: 'coinSymbol', description: '코인 심볼'})
+    @Get('/member')
+    async getMemberWalletList(
+        @Query('coinSymbol') coinSymbol: string
+    ): Promise<CustomHttpResponse> {
+        return await this.walletService.getMemberWalletList(coinSymbol);
+    }
 }
