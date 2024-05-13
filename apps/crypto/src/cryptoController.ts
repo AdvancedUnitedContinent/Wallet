@@ -106,11 +106,6 @@ export class CryptoController {
         return await this.cryptoService.getTerms();
     }
 
-    @ApiOperation({summary: '약관 동의'})
-    @Put('terms/agreement')
-    async updateWalletAgreement(@Req() req): Promise<CustomHttpResponse> {
-        return await this.cryptoService.updateWalletAgreement(req.user.memberNo);
-    }
 
     //TODO: Need to relocate to the BackOffice
     @ApiOperation({summary: '코인 등록'})
