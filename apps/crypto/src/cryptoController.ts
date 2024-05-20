@@ -85,6 +85,18 @@ export class CryptoController {
             updWalletAddressBookReq,
         );
     }
+    
+    @ApiOperation({ summary: '출금 주소록 수정' })
+    @Put('withdrawal/addressbook')
+    async updateWalletAddressBook(
+        @Req() req,
+        @Body() updWalletAddressBookReq: UpdWalletAddressBookReq,
+    ): Promise<CustomHttpResponse> {
+        updWalletAddressBookReq.memberNo = req.user.memberNo;
+        return await this.cryptoService.updateWalletAddressBook(
+            updWalletAddressBookReq,
+        );
+    }
 
     @ApiOperation({ summary: '출금 주소록 삭제' })
     @ApiQuery({ name: 'addressNo', description: '주소록 번호' })
@@ -99,6 +111,8 @@ export class CryptoController {
             memberNo,
         );
     }
+    
+
 
     @ApiOperation({summary: '약관 조회'})
     @Get('terms')
