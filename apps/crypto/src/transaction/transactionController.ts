@@ -15,12 +15,4 @@ export class TransactionController {
         withdrawalCreateReq.memberNo = req.user.memberNo;
         return await this.transactionService.createWithdrawal(withdrawalCreateReq);
     }
-
-    @ApiOperation({summary: '전환 요청'})
-    @ApiBody({type: SwapCreateReq})
-    @Post('swap')
-    async createSwap(@Req() req, @Body() swapCreateReq: SwapCreateReq): Promise<CustomHttpResponse> {
-        swapCreateReq.memberNo = req.user.memberNo;
-        return await this.transactionService.createSwap(swapCreateReq);
-    }
 }
