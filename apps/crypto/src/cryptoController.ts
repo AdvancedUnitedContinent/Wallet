@@ -111,14 +111,7 @@ export class CryptoController {
             memberNo,
         );
     }
-    
 
-
-    @ApiOperation({summary: '약관 조회'})
-    @Get('terms')
-    async getTerms(): Promise<CustomHttpResponse> {
-        return await this.cryptoService.getTerms();
-    }
 
 
 }
