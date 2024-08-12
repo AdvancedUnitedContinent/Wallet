@@ -74,17 +74,6 @@ export class CryptoController {
         );
     }
 
-    @ApiOperation({ summary: '출금 주소록 수정' })
-    @Put('withdrawal/addressbook')
-    async updateWalletAddressBook(
-        @Req() req,
-        @Body() updWalletAddressBookReq: UpdWalletAddressBookReq,
-    ): Promise<CustomHttpResponse> {
-        updWalletAddressBookReq.memberNo = req.user.memberNo;
-        return await this.cryptoService.updateWalletAddressBook(
-            updWalletAddressBookReq,
-        );
-    }
 
 
 
