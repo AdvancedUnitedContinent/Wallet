@@ -57,23 +57,6 @@ export class CryptoController {
         return await this.cryptoService.addWalletAddressBook(addWalletAddressBookReq);
     }
 
-    @ApiOperation({ summary: '출금 주소록 조회' })
-    @ApiQuery({ name: 'pageNo', description: '페이지 번호', required: false })
-    @ApiQuery({ name: 'pageSize', description: '페이지 크기', required: false })
-    @Get('withdrawal/addressbook')
-    async getWalletAddressBookList(
-        @Req() req,
-        @Query('pageNo') pageNo: number = 1,
-        @Query('pageSize') pageSize: number = 1000,
-    ): Promise<CustomHttpResponse> {
-        const memberNo: number = req.user.memberNo;
-        return await this.cryptoService.getWalletAddressBookList(
-            memberNo,
-            pageNo,
-            pageSize,
-        );
-    }
-
 
 
 
