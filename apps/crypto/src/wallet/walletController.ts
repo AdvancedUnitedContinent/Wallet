@@ -58,7 +58,7 @@ export class WalletController {
     async getMemberWalletListByCryptoType(
         @Query('cryptoType') cryptoType: string
     ): Promise<CustomHttpResponse> {
-        // todo: need to add guard api
+        // todo: need to add guard api222
         return await this.walletService.getMemberWalletListByCryptoType(cryptoType);
     }
 }
