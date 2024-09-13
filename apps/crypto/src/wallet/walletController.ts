@@ -52,13 +52,4 @@ export class WalletController {
         return await this.walletService.getMemberWalletList(coinSymbol);
     }
 
-    @ApiOperation({summary: '코인 타입 별 회원 지갑 목록 조회'})
-    @ApiQuery({name: 'cryptoType', description: '코인 타입'})
-    @Get('/member/cryptoType')
-    async getMemberWalletListByCryptoType(
-        @Query('cryptoType') cryptoType: string
-    ): Promise<CustomHttpResponse> {
-        // todo: need to add guard api222
-        return await this.walletService.getMemberWalletListByCryptoType(cryptoType);
-    }
 }
