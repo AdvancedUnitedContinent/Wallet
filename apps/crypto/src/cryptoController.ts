@@ -51,8 +51,8 @@ export class CryptoController {
     @Post('withdrawal/addressbook')
     async addWalletAddressBook(
         @Req() req,
-        @Body() addWalletAddressBookReq: AddWalletAddressBookReq,
-    ): Promise<CustomHttpResponse> {
+        @Body() addWalletAddressBookReq: AddWalletAddressBookRequest,
+    ): Promise<CustomHttpResponse> { 
         addWalletAddressBookReq.memberNo = req.user.memberNo;
         return await this.cryptoService.addWalletAddressBook(addWalletAddressBookReq);
     }
