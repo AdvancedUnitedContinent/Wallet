@@ -40,7 +40,7 @@ export class CryptoController {
     @ApiOperation({summary: '출금 지갑 유효성 검사'})
     @ApiQuery({name: 'address', description: '출금 주소'})
     @Get('withdrawal/address')
-    async checkWalletAddress(
+    async checkingWalletAddress(
         @Query('address') address: string,
         @Query('tokenType') tokenType: string,
     ): Promise<CustomHttpResponse> {
@@ -51,10 +51,10 @@ export class CryptoController {
     @Post('withdrawal/addressbook')
     async addWalletAddressBook(
         @Req() req,
-        @Body() addWalletAddressBookReq: AddWalletAddressBookRequest,
+        @Body() addWalletAddressBookRequest: AddWalletAddressBookRequest,
     ): Promise<CustomHttpResponse> { 
         addWalletAddressBookReq.memberNo = req.user.memberNo;
-        return await this.cryptoService.addWalletAddressBook(addWalletAddressBookReq);
+        return await this.cryptoService.addWalletAddressBook(addWalletAddressBookRequest);
     }
 
 
