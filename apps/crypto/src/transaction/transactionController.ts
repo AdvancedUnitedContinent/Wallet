@@ -11,7 +11,7 @@ export class TransactionController {
     @ApiOperation({summary: '출금 요청'})
     @ApiBody({type: WithdrawalCreateReq})
     @Post('withdrawal')
-    async createWithdrawal(@Req() req, @Body() withdrawalCreateReq: WithdrawalCreateReqDto): Promise<CustomHttpResponse> {
+    async createWithdrawal(@Req() req, @Body() withdrawalCreateReq: WithdrawCreateReqDto): Promise<CustomHttpResponse> {
         withdrawalCreateReq.memberNo = req.user.memberNo;
         return await this.transactionService.createWithdrawal(withdrawalCreateReq);
     }
